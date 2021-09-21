@@ -8,66 +8,87 @@
 
     <style>
         body{
-
-            margin:0;
-           
+            margin:0;        
         }
       
         h1{
-
             font-size: 45px;
-
-           border:5px solid green;
+           border-bottom:1px solid black;
            padding: 20px; 
            margin: 0;
            display: block;
           
-           text-align: center;
-              border-bottom:5px solid greenyellow;
-                
-               
-
+           text-align: left;
+           color: navy;
+         
+             
         }
 
-         ol{
+        #grid   ol{
 
-            color:black;
+                color:black;
 
              border-right:1px solid black;
               width:100px;
               text-align: left;
-              margin:0;
+              margin:0px;
+              padding:0;
             
-              padding :20px;
-                
-
-
+              padding-right : 30px;
+              padding-top: 30px ;
 
          }
-           
-      
+         
+            a{
+
+                color: black;
+            }
+  
+      #grid{
+
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        padding-left: 30px;
+
+
+      }
         
+      #develog{
+
+        text-align: right;
+        padding-right: 20px;
+        color: green;
+
+
+
+      }
 
     </style>
 </head>
 <body>
-    <h1>WEB</h1>
+    <h5 id="develog">연잎의 develog</h5>
+ <h1>WEB</h1>
+    
+ 
+    <div id="grid">
   
-    <ol>
+    <ol id >
         <li> <a href="1.html">HTML</a> </li>
         <li> <a href="2.html">CSS </a> </li>
         <li> <a href="3.html">JAVASCRIPT </a> </li>
     </ol>
-
-
-    <p>The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators (URLs, such as https://example.com/), which may be interlinked by hyperlinks, and are accessible over the Internet.[1][2] The resources of the Web are transferred via the Hypertext Transfer Protocol (HTTP), may be accessed by users by a software application called a web browser, and are published by a software application called a web server. The World Wide Web is not synonymous with the Internet, which pre-dated the Web in some form by over two decades and upon the technologies of which the Web is built.</p>
+    
+    <div>
+    <h2 style="font-size:40px;">HTML</h2>
+    
+    <p>Hyper Text MarkupLanguage (HTML, Culture: Ultra-Basic Expression Language, Hyper-Main Expression Language) is the dominant markup languagefor web pages,and HTML also provides a way to create structured documentswith links, citations, and other items, as well as to indicate structural meanings for the body, such as titles, paragraphs, and lists. It can also be used to embed images and objects and create interactive forms. HTML is written in the form of an HTML element that is "tagged" surrounded by angle bracketsin the content of a web page. HTML can include or recall scriptssuch as JavaScriptthat affect the behavior of HTML processing devices, such as web browsers,and CSS that define the appearance and placement of the body and other items. W3C,co-director of HTML and CSS standards, recommends the use of CSS for clear and superficial markup. [</p>
    
-        <p>Cascading Style Sheets (<a href="https://ko.wikipedia.org/wiki/CSS">CSS</a>) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]
+        <p>Cascading Style Sheets (<a href="https://ko.wikipedia.org/wiki/CSS" >CSS</a>) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]
 
          CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file which reduces complexity and repetition in the structural content as well as enabling the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.
             
         Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.[4] </p>
-      
-
+    </div> 
+    </div>  
 </body>
 </html>
