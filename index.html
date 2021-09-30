@@ -3,9 +3,11 @@
         <title> WEB </title>
         <meta charset="utf-8">
         <style> 
+        
             a{
                
-                text-decoration: solid;    
+                text-decoration: solid;   
+                color:blue 
             }
             h1{
                 font-size: 45px;
@@ -15,16 +17,29 @@
 
             text-align: right;
 
-           
-
           }
-           
+          
         </style>
     </head>
 
-    <body>
+    <body style="background-color: black; color: white;">
 
        <h1>WEB</h1>
+       <input type ="button" value="night" onclick="
+       document.querySelector('body').style.backgroundColor= 'black';
+       document.querySelector('body').style.color= 'white';
+      ">
+       <input type ="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor= 'white';
+        document.querySelector('body').style.color= 'black';
+       ">
+       
+      
+
+
+
+
+       
        <h2 style="text-align: center;">Welcome to web</h2>
      
        <p  id="ver2"> <a href="box.html"  >WEB 메인 ver.box</Ver></a></p>
