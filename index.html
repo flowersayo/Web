@@ -6,7 +6,7 @@
         
             a{
                
-                text-decoration: solid;   
+                text-decoration: underline;   
                 color:blue 
             }
             h1{
@@ -22,7 +22,7 @@
         </style>
     </head>
 
-    <body style="background-color: black; color: white;">
+    <body >
 
        <h1>WEB</h1>
        <input type ="button" value="night" onclick="
@@ -34,17 +34,44 @@
         document.querySelector('body').style.color= 'black';
        ">
        
-      
+       <input type ="button" value="night" onclick="
+       var target =document.querySelector('body');
 
+       if (this.value==='night'){
+        target.style.backgroundColor= 'black';
+        target.style.color= 'white';
+        this.value='day';
 
+        var list=document.querySelectorAll('a')
+        var i=0;
 
+        while (i<list.length){
+              list[i].style.color='powderblue';
+              i+=1;
+        }
+
+       }
+       else{
+
+        target.style.backgroundColor='white';
+        target.style.color= 'black';
+        this.value='night';
+
+        var list=document.querySelectorAll('a')
+        var i=0;
+
+        while (i<list.length){
+              list[i].style.color='blue';
+              i+=1;
+        }
+
+       }
+       ">
 
        
        <h2 style="text-align: center;">Welcome to web</h2>
      
        <p  id="ver2"> <a href="box.html"  >WEB 메인 ver.box</Ver></a></p>
-
-        <img src="coding.jpg" width="50%">
        
         
         <ol>
@@ -53,7 +80,7 @@
             <li> <a href="3.html">JAVASCRIPT </a> </li>
         </ol>
 
-
+        <img src="coding.jpg" width="50%">
        
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
