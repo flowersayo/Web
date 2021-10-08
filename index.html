@@ -2,6 +2,7 @@
     <head>
         <title> WEB </title>
         <meta charset="utf-8">
+        <script src="colors.js"></script>
         <style> 
         
             a{
@@ -20,6 +21,9 @@
           }
           
         </style>
+
+        
+
     </head>
 
     <body >
@@ -33,40 +37,12 @@
         document.querySelector('body').style.backgroundColor= 'white';
         document.querySelector('body').style.color= 'black';
        ">
-       
-       <input type ="button" value="night" onclick="
-       var target =document.querySelector('body');
 
-       if (this.value==='night'){
-        target.style.backgroundColor= 'black';
-        target.style.color= 'white';
-        this.value='day';
-
-        var list=document.querySelectorAll('a')
-        var i=0;
-
-        while (i<list.length){
-              list[i].style.color='powderblue';
-              i+=1;
-        }
-
-       }
-       else{
-
-        target.style.backgroundColor='white';
-        target.style.color= 'black';
-        this.value='night';
-
-        var list=document.querySelectorAll('a')
-        var i=0;
-
-        while (i<list.length){
-              list[i].style.color='blue';
-              i+=1;
-        }
-
-       }
+        <input type ="button" value="night" onclick="
+        nightDayHandler(this);
        ">
+       
+      
 
        
        <h2 style="text-align: center;">Welcome to web</h2>
